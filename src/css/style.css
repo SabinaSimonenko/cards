@@ -1,0 +1,90 @@
+@import url('./default.css');
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card {
+    width: 350px;
+    /* 1) Смещение от левого края 
+       2) Смещение от верха
+       3) Размытие тени
+       4) Распространение тени (необязательно)
+       5) Цвет тени */
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background-color: white;
+    font-family: 'Open Sans';
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.cover img {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    /* Определяет как подогнать картинку по размерам внутри какого-то блока  */
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-content {
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.desc {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    background-color: rgb(255, 140, 0);
+    color: white;
+    padding: 11px 17px;
+    border-radius: 13px;
+    text-transform: uppercase;
+    transition: 400ms;
+}
+
+.btn:hover {
+    scale: 1.1;
+    cursor: progress;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
