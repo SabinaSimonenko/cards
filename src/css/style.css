@@ -87,4 +87,22 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
+}
+
+header {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 37px;
+}
+
+.text {
+    margin-left: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
